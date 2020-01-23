@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import FileInputForm from './FileInputForm'
-import stlData from '../stl-data.json'
+import stlData from './stl-data.json'
 import { v4 } from 'uuid'
 
 function App() {
