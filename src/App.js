@@ -1,7 +1,7 @@
 import React from 'react'
 import { FileProvider } from './hooks/FileProvider'
-import StlList from './StlList.js'
-import FileInputForm from './FileInputForm'
+import StlList from './FileList/StlList.js'
+import FileInputForm from './FileInput/FileInputForm'
 
 function App() {
     return (

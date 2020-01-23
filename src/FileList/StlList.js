@@ -1,6 +1,6 @@
 import React from 'react'
 import StlFile from './StlFile'
-import { useFiles } from './hooks/FileProvider'
+import { useFiles } from '../hooks/FileProvider'
 
 export default function StlList() {
     const { files } = useFiles()

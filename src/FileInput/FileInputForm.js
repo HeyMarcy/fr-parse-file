@@ -1,6 +1,6 @@
 import React from 'react'
-import { useInput, useFiles } from './hooks/FileProvider'
-import asciiParser from './utils/ascii-parser.js'
+import { useInput, useFiles } from '../hooks/FileProvider'
+import asciiParser from '../utils/ascii-parser.js'
 
 export default function AddFileDataForm() {
     const [ascii, setAscii] = useInput('')

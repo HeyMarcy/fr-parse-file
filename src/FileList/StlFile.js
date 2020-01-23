@@ -1,5 +1,5 @@
 import React from 'react'
-import { useFiles } from './hooks/FileProvider'
+import { useFiles } from '../hooks/FileProvider'
 
 export default function StlFile({
     id,
