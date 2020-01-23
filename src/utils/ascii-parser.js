@@ -17,7 +17,13 @@ const asciiParser = str => {
 
         switch (parts[0]) {
             case 'solid':
-                name = parts.slice(1).join(' ')
+                // checks to see if file has a name.
+                var isName = parts.slice(1).join(' ')
+                if (!/^[A-Za-z0-9]+$/.test(isName)) {
+                    name = 'Untitled'
+                } else {
+                    name = isName
+                }
                 break
             case 'facet':
                 var normal = parts.slice(2).map(Number)
@@ -25,7 +31,7 @@ const asciiParser = str => {
                 break
 
             default:
-            // skip
+            // skip for now
         }
     }
     return {
