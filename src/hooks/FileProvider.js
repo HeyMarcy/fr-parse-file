@@ -2,9 +2,20 @@ import React, { createContext, useContext, useState } from 'react'
 import stlData from '../stl-data.json'
 import { v4 } from 'uuid'
 
+// UseInput
+export const useInput = initialValue => {
+    const [value, setValue] = useState(initialValue)
+    return [
+        { value, onChange: e => setValue(e.target.value) },
+        () => setValue(initialValue),
+    ]
+}
+
+// Context
 const FileContext = createContext()
 export const useFiles = () => useContext(FileContext)
 
+// Provider
 export const FileProvider = ({ children }) => {
     const [files, setFiles] = useState(stlData)
 
