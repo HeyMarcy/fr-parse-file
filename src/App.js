@@ -6,6 +6,7 @@ import { v4 } from 'uuid'
 
 function App() {
     const [files, setFiles] = useState(stlData)
+
     return (
         <div className="App">
             <FileInputForm
@@ -19,6 +20,7 @@ function App() {
                         },
                     ]
                     setFiles(newFiles)
+                    console.log(files, newFiles)
                 }}
             />
         </div>
