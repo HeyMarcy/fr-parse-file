@@ -1,20 +1,26 @@
 import React, { useState } from 'react'
-import asciiParser from '../utils/ascii-parser.js'
+import asciiParser from './utils/ascii-parser.js'
+
+export const useInput = initialValue => {
+    const [value, setValue] = useState(initialValue)
+    return [
+        { value, onChange: e => setValue(e.target.value) },
+        () => setValue(initialValue),
+    ]
+}
 
 export default function FileInputForm({ onNewFile = f => f }) {
-    const [ascii, setAscii] = useState('')
+    const [ascii, resetAscii] = useInput('')
 
     const submit = e => {
         e.preventDefault()
-        const ascii = ascii.current.value
-        onNewFile(ascii)
-        ascii.current.value = ''
+        onNewFile(ascii.value)
+        resetAscii('')
     }
     return (
         <form onSubmit={submit}>
             <textarea
-                value={ascii}
-                onChange={e => setAscii(e.target.value)}
+                {...ascii}
                 className="textarea"
                 type="text"
                 placeholder="Paste ASCII format file"
