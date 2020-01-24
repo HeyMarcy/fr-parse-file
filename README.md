@@ -50,6 +50,7 @@ Then run `yarn start` or `npm run start`.
 
 ### To-Dos:
 
+-   [ ] Add GraphQL to handle data.
 -   [ ] Add bounding-box data.
 -   [ ] Add surface-area data.
 -   [ ] Add units radio buttons?
