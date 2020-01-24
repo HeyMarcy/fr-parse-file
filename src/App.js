@@ -36,9 +36,9 @@ function App() {
                         <Footer>
                             <div className="row">
                                 <h5 className="heading">Work with Marcy</h5>
-                                <button>
+                                <a href="https://www.linkedin.com/in/heymarcy/">
                                     <LinkedIn />
-                                </button>
+                                </a>
                             </div>
                         </Footer>
                     </FooterWrapper>
@@ -133,9 +133,10 @@ const Footer = styled.div`
         justify-content: space-between;
         border-bottom: 1px solid #05a6df;
         width: 100%;
-        & button {
+        & a {
             background-color: transparent;
             border: none;
+            text-decoration: none;
         }
         & svg {
             fill: #9eb6cd;

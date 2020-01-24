@@ -52,5 +52,5 @@ Then run `yarn start` or `npm run start`.
 -   [ ] Add bounding-box data.
 -   [ ] Add surface-area data.
 -   [ ] Add units radio buttons?
--   [ ] Add LinkedIn link URL
 -   [ ] Add sort to list?
+-   [ ] REFACTOR!
