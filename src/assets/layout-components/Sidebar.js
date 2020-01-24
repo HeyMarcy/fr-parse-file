@@ -52,7 +52,7 @@ export const ListItem = styled.li(
         `
 )
 
-export const DeleteBtn = styled.ul(
+export const DeleteBtn = styled.button(
     props =>
         css`
             color: ${theme.linkColor};
@@ -60,5 +60,17 @@ export const DeleteBtn = styled.ul(
             align-items: center;
             justify-content: space-between;
             font-size: 0.85rem;
+            border: none;
+            background-color: transparent;
+            &:hover {
+                cursor: pointer;
+
+            &:focus {
+                outline: 0;
+                border-color: #fff;
+                outline-offset: 1px;
+                outline: 3px dotted rgba(43, 180, 230, 0.5);
+                outline-offset: 1px;
+            }
         `
 )

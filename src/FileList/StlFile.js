@@ -23,8 +23,8 @@ export default function StlFile({
                 </p>
             </div>
             <DeleteBtn onClick={() => removeFile(id)}>
-                <CircleX />
-                <p>Delete</p>
+                <CircleX aria-hidden="true" />
+                <p clasName="ml-5">Delete</p>
             </DeleteBtn>
         </ListItem>
     )

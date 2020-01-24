@@ -39,6 +39,9 @@ export const GlobalCSS = () => (
             .ml-auto {
                 margin-left: auto;
             }
+            .ml-5 {
+                margin-left: 5px;
+            }
             .mr-5 {
                 margin-right: 5px;
             }
