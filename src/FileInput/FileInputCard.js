@@ -19,11 +19,12 @@ const Card = styled.div`
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    padding-bottom: 2.5rem;
+
+    padding: 0 30px 2.5rem 30px;
     & p {
         margin-bottom: 1.5rem;
     }
     @media (min-width: 967px) {
-        padding-right: 2.25rem;
+        padding: 0 2.25rem 0 0;
     }
 `
