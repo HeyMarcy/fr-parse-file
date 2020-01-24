@@ -13,6 +13,7 @@ The purpose of this app is to parse an ascii STL file and analyze the file. The 
 Additional features includes:
 
 -   a list of submitted files
+-   unnamed files are accounted for
 -   the ability to delete items from the list
 -   UI that borrows from Fast Radius' website
 
