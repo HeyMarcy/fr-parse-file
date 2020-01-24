@@ -3,8 +3,8 @@ import React from 'react'
 export const LogoIcon = () => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="46"
-        height="47"
+        width="31"
+        height="30"
         viewBox="0 0 46 47"
     >
         <g fill="#05A6DF">

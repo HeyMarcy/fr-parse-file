@@ -1,5 +1,6 @@
 import React from 'react'
 import { Global, css } from '@emotion/core'
+import { theme } from './assets/theme'
 
 export const GlobalCSS = () => (
     <Global
@@ -14,17 +15,56 @@ export const GlobalCSS = () => (
                 padding: 0;
                 width: 100%;
                 height: 100%;
-                font-family: 'Helvetica', arial, sans-serif;
+                color: #333333;
+                font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica,
+                    Arial, sans-serif;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
             }
-
-            body {
-                margin: 40px;
+            .flex {
+                display: flex;
+            }
+            .flex-space-between {
+                display: flex;
+                justify-content: space-between;
+            }
+            .flex-baseline {
+                display: flex;
+                align-items: baseline;
+            }
+            .flex-center {
+                display: flex;
+                align-items: center;
+            }
+            .ml-auto {
+                margin-left: auto;
+            }
+            .mr-5 {
+                margin-right: 5px;
             }
 
-            a {
-                color: blueviolet;
+            /* TYPOGRAPHY */
+            .title {
+                color: #495057;
+                border-bottom: 1px solid #dee2e6;
+                padding-bottom: 1rem;
+                margin-bottom: 0;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+            .p-large {
+                font-size: 1.125rem;
+            }
+            .fauxLink {
+                color: ${theme.linkColor};
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0;
+                &:hover {
+                    color: ${theme.altDark};
+                }
             }
         `}
     />
