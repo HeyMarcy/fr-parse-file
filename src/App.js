@@ -7,7 +7,7 @@ import FileInputForm from './FileInput/FileInputForm'
 import styled from '@emotion/styled'
 import { GlobalCSS } from './global-css'
 
-import { LogoIcon, LogoType } from './assets/svg-components/Logos'
+import { LogoIcon, LogoType, LinkedIn } from './assets/svg-components/Logos'
 
 function App() {
     return (
@@ -34,7 +34,12 @@ function App() {
                     </Main>
                     <FooterWrapper>
                         <Footer>
-                            <h5 className="heading">Work with Marcy</h5>
+                            <div className="row">
+                                <h5 className="heading">Work with Marcy</h5>
+                                <button>
+                                    <LinkedIn />
+                                </button>
+                            </div>
                         </Footer>
                     </FooterWrapper>
                 </Wrapper>
@@ -66,7 +71,7 @@ const Navbar = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1054px;
     height: 50px;
     margin: 0 auto;
     padding: 0 30px;
@@ -112,16 +117,29 @@ const Footer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1054px;
     margin: 50px auto;
     padding: 0 30px;
     & .heading {
-        margin: 0;
-        font-size: 2rem;
+        margin: 1.5rem 0;
+        font-size: 1.75rem;
         font-weight: 600;
         color: #ffffff;
     }
-    & svg {
-        margin-right: 1rem;
+
+    & .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #05a6df;
+        width: 100%;
+        & button {
+            background-color: transparent;
+            border: none;
+        }
+        & svg {
+            fill: #9eb6cd;
+            width: 40px;
+        }
     }
 `

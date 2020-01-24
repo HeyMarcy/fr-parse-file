@@ -28,6 +28,8 @@ export const List = styled.ul(
             list-style: none;
             margin: 0;
             padding-inline-start: 0;
+            min-width: 358px;
+            color: #ffffff;
         `
 )
 export const ListItem = styled.li(
@@ -42,6 +44,7 @@ export const ListItem = styled.li(
             background-color: #f8f9fa;
             width: 100%;
             max-width: 560px;
+            color: #495057;
             & h3 {
                 font-size: 1.5rem;
                 margin: 0 1.5rem 0 0;
